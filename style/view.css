@@ -1,0 +1,218 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+body{
+    background-size: 1920px;
+    background: url("../image/bg/4.jpg") 100% 100% no-repeat fixed;
+    background-size: cover;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#all{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#second{
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 15%;
+    top:26%
+}
+.intor{
+    position:absolute;
+    width:23%;
+    height:610px;
+    font-family: serif;
+    display: inline-block;
+}
+.intor span{
+    width: 80%;
+    padding: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-indent: 30px;
+    font-weight: bolder;
+    position:absolute;
+    top:10%;
+}
+#title img ,.intor img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.photo img{
+    height:100%;
+    width:100%;
+}
+.middle{
+    display:inline-block;
+    width:995px;
+    position:relative;
+    left: 24%;
+    /*border: 2px solid #313131;*/
+}
+.left-part,.right-part{
+    position:relative;
+    display: inline-block;
+}
+.right-part{
+    padding-right: 2px;
+}
+.left-part{
+    padding-left: 3px;
+}
+.left-part div:nth-child(1),.left-part div:nth-child(2){
+    width: 255px;
+    height:270px;
+    display: inline-block;
+}
+.left-part div:nth-child(3){
+    width: 520px;
+    height: 320px;
+}
+.right-part div:nth-child(1),.right-part div:nth-child(2){
+    width: 256px;
+    height:600px;
+    display: inline-block;
+}
+.img-content{
+    color: #e9eeec;
+    left: 265px;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    top:0;
+    background-color: #090909;
+}
+.port-4{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
+    /*border: 4px solid rgba(255, 255, 255, 0.9);*/
+    z-index: 10;
+}
+.port-4.effect-1 .image-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    transform: rotateY(360deg) scale(1, 1);
+}
+
+.port-4.effect-1 .text-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    transform: rotateY(0deg) scale(0, 0);
+    transition: 1s; opacity: 0;
+}
+.port-4.effect-1 .text-desc h3{
+    padding-top: 10px;
+}
+.port-4.effect-1 .text-desc p{
+    padding: 20px;
+}
+.port-4.effect-1:hover .text-desc{
+    transform: rotateY(360deg) scale(1, 1);
+    opacity: 1;
+    background-image: linear-gradient(to bottom, #F0F2F0 0%, #000C40   100%);
+}
+.port-4.effect-1:hover .image-box{
+    transform: rotateY(0deg) scale(0, 0);
+    opacity: 0;
+}
+
+#two-all{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.two-top{
+    width: 50%;
+    margin-top: 50px;
+    font-size: 43px;
+    font-family: "sans-serif",serif;
+}
+span{
+      display: block;
+      margin: 0 auto;
+  }
+.two-left{
+    position:relative;
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    writing-mode: bt-rl;
+    border: 1px solid #000C40;
+    border-radius: 10px;
+}
+.two-mid{
+    position:absolute;
+    display: inline-block;
+    width: 570px;
+    height: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.two-right{
+    position:absolute;
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    right:100px;
+    margin-top: 20px;
+    border: 1px solid #000C40;
+    border-radius: 10px;
+}
+.two-mid .mid1 img{
+    width: 100%;
+    height: 600px;
+}
+.two-left span,.two-right span{
+    display: inline-block;
+    width: 50px;
+    font-size: 35px;
+    margin: 13px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-right: 1px solid #58070d;
+    float: left;
+}
+#title{
+    position: absolute;
+    background: transparent;
+    top: 9%;
+    right: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #a01210;
+    font-family: title,"serif";
+}
+@font-face {
+    font-family: title;
+    src:url("../source/HYShangWeiShouShuW.ttf");
+}
