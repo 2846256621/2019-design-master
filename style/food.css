@@ -1,295 +1,342 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-html,body{
+
+html, body {
     width: 100%;
     height: 100%;
 }
-body{
-    background-size: 1920px;
+
+body {
+    background-size: 100% 100%;
     background: url("../image/food-images/bg.jpeg") 100% 100% no-repeat fixed;
     background-size: cover;
+    min-width: 1560px;
 }
-#container{
+
+#container {
     width: 100%;
     height: 86%;
     position: relative;
 
 }
-#second{
+
+#second {
     position: relative;
     z-index: 100;
 }
+
 /*实现图片分割，可以用 最后两个数字控制起始位置*/
-.left{
-    background:transparent url("../image/food-images/timg.jpg")  no-repeat scroll 0 0;
+.left {
+    background: transparent url("../image/food-images/timg.jpg") no-repeat scroll 0 0;
     background-size: cover;
     position: absolute;
-    margin-top: 13%;
-    margin-left: 20%;
+    margin-top: 14%;
+    margin-left: 11%;
     width: 230px;
     height: 600px;
     overflow: hidden;
 }
-.left2{
+
+.left2 {
     left: 240px;
-    background:transparent url("../image/food-images/timg.jpg") no-repeat scroll -220px 0;
-    background-size: cover;
-}
-.left3{
-    left: 480px;
-    background:transparent url("../image/food-images/timg.jpg") no-repeat scroll -440px 0;
+    background: transparent url("../image/food-images/timg.jpg") no-repeat scroll -220px 0;
     background-size: cover;
 }
 
+.left3 {
+    left: 480px;
+    background: transparent url("../image/food-images/timg.jpg") no-repeat scroll -440px 0;
+    background-size: cover;
+}
 
 /*写内凹圆角*/
-.one{
+.one {
     position: absolute;
     width: 50px;
     height: 50px;
     background: white;
 }
-.left1_top_left{
-    left: 375px;
-    top: 261px;
+
+.left1_top_left {
+    left: 160px;
+    top: 211px;
     border-radius: 0 0 50% 0;
 }
-.left1_top_right{
-    left: 570px;
-    top: 261px;
+
+.left1_top_right {
+    left: 350px;
+    top: 211px;
     border-radius: 0 0 0 50%;
 }
-.left1_bottom_left{
-    width: 48px;
-    height: 40px;
-    left: 384px;
-    top: 834px;
+
+.left1_bottom_left {
+    left: 162px;
+    top: 775px;
     border-radius: 0 50% 0 0;
 }
-.left1_bottom_right{
-    left: 570px;
-    top: 835px;
-    border-radius: 50% 0 0 0;
-}
-/*写三次*/
-.two{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: white;
-}
-.left2_top_left{
-    left: 610px;
-    top: 261px;
-    border-radius: 0 0 50% 0;
-}
-.left2_top_right{
-    left: 816px;
-    top: 261px;
-    border-radius: 0 0 0 50%;
-}
-.left2_bottom_left{
-    left: 612px;
-    top: 835px;
-    border-radius: 0 50% 0 0;
-}
-.left2_bottom_right{
-    left: 816px;
-    top: 835px;
+
+.left1_bottom_right {
+    left: 352px;
+    top: 775px;
     border-radius: 50% 0 0 0;
 }
 
-.three{
+/*写三次*/
+.two {
     position: absolute;
     width: 50px;
     height: 50px;
-    background:white;
+    background: white;
 }
-.left3_top_left{
-     left: 854px;
-     top: 261px;
-     border-radius: 0 0 50% 0;
- }
-.left3_top_right{
-    left: 1050px;
-    top: 261px;
+
+.left2_top_left {
+    left: 400px;
+    top: 211px;
+    border-radius: 0 0 50% 0;
+}
+
+.left2_top_right {
+    left: 591px;
+    top: 211px;
     border-radius: 0 0 0 50%;
 }
-.left3_bottom_left{
-    left: 854px;
-    top: 835px;
+
+.left2_bottom_left {
+    left: 402px;
+    top: 775px;
     border-radius: 0 50% 0 0;
 }
-.left3_bottom_right{
-    left: 1050px;
-    top: 835px;
+
+.left2_bottom_right {
+    left: 591px;
+    top: 775px;
+    border-radius: 50% 0 0 0;
+}
+
+.three {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+}
+
+.left3_top_left {
+    left: 641px;
+    top: 211px;
+    border-radius: 0 0 50% 0;
+}
+
+.left3_top_right {
+    left: 834px;
+    top: 211px;
+    border-radius: 0 0 0 50%;
+}
+
+.left3_bottom_left {
+    left: 638px;
+    top: 775px;
+    border-radius: 0 50% 0 0;
+}
+
+.left3_bottom_right {
+    left: 834px;
+    top: 775px;
     border-radius: 50% 0 0 0;
 }
 
 /*翻转动画*/
 
-.tran{
-    animation: myFan 2s ease-in-out ;
+.tran {
+    animation: myFan 2s ease-in-out;
 }
 
 @keyframes myFan {
-    0%{transform: rotateY(0deg) perspective(1000px)}
-    100%{transform: rotateY(360deg) perspective(1000px) }
+    0% {
+        transform: rotateY(0deg) perspective(1000px)
+    }
+    100% {
+        transform: rotateY(360deg) perspective(1000px)
+    }
 }
 
 /*前进后退*/
-.btn{
+.btn {
     width: 80px;
     z-index: 1000;
 }
-.left-btn{
-    margin-left: 1700px;
+
+.left-btn {
+    margin-left: 1370px;
     margin-top: 400px;
 }
-.right-btn{
-    margin-left: 1700px;
+
+.right-btn {
+    margin-left: 1370px;
     margin-top: 100px;
 }
-.iconfont{
+
+.iconfont {
     font-size: 60px;
 }
 
-.explain{
-    width: 503px;
+.explain {
+    width: 400px;
     height: 600px;
     background: #000;
     position: absolute;
-    left: 1170px;
-    top: 273px;
+    left: 926px;
+    top: 215px;
 }
 
-.cc{
+.cc {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: white;
     position: absolute;
 }
-.one1{
-    left: 1145px;
-    top: 251px;
-}
-.two1{
-    left: 1645px;
-    top: 251px;
-}
-.three1{
-    left: 1145px;
-    top: 846px;
-}
-.four1{
-    left: 1645px;
-    top: 846px;
+
+.one1 {
+    left: 901px;
+    top: 200px;
 }
 
+.two1 {
+    left: 1300px;
+    top: 200px;
+}
 
-.radius{
+.three1 {
+    left: 901px;
+    top: 780px;
+}
+
+.four1 {
+    left: 1300px;
+    top: 780px;
+}
+
+.radius {
     width: 50px;
     height: 50px;
     position: absolute;
     background: white;
     border-radius: 50%;
 }
-.rr-l{
-    left: 590px;
-    top: 550px;
-}
-.rr-r{
-    left: 830px;
-    top: 550px;
+
+.rr-l {
+    left: 377px;
+    top: 500px;
 }
 
-@font-face{
+.rr-r {
+    left: 617px;
+    top: 500px;
+}
+
+@font-face {
     font-family: myFont;
     src: url("../source/ChalkPaint.ttf");
 }
-.text{
-    font-family: myFont,"serif";
+
+.text {
+    font-family: myFont, "serif";
     color: yellow;
     font-size: 5em;
     writing-mode: vertical-lr;
 }
-.text1{
+
+.text1 {
     /*font-family: myFont2;*/
     color: yellow;
-    font-size: 30px;
+    font-size: 23px;
     writing-mode: vertical-lr;
     padding: 55px 35px;
     position: absolute;
     top: 10px;
     left: 70px;
 }
-.hanzi{
+
+.hanzi {
     background: url('../image/food-images/foo1.png') no-repeat;
     background-size: cover;
 }
-#title{
+
+#title {
     position: absolute;
-    top:9%;
-    right: 11%;
-    font-size: 70px;
+    top: 9%;
+    right: 5%;
+    font-size: 55px;
     color: #8a0b15;
-    font-family: title ,"sans-serif";
+    font-family: title, "sans-serif";
 }
+
 @font-face {
     font-family: title;
-    src:url("../source/HYShangWeiShouShuW.ttf");
+    src: url("../source/HYShangWeiShouShuW.ttf");
 }
-#all_second{
-    margin-top: 50px;
+
+#all_second {
+    margin-top: 250px;
     height: 1080px;
     width: 100%;
     position: relative;
 }
-#all_second_next{
-    position: absolute;
-    width: 70%;
+
+#all_second_next {
+    position: relative;
+    width: 76%;
     height: 90%;
-    left: 20%;
-    top: 5%;
+    left: 12%;
+    top: 3%;
 }
-#all_second_next div[class="second_top"]{
+
+#all_second_next div[class="second_top"] {
     float: left;
-    height: 40%;
+    height: 32%;
     margin-right: 44px;
     width: 50%;
     display: inline-block;
     margin-top: 0;
 
 }
-#all_second_next img[class="second_top"]
-{
-    float: right;
-    height: 40%;
-    width: 45%;
+
+#all_second_next img[class="second_top"] {
+    position: relative;
+    right: 13px;
+    height: 32%;
+    width: 42%;
     display: inline-block;
     margin-top: 0;
 }
 
-#all_second_next img{
-    height: 300px;
-    width: 322px;
+#all_second_next img {
+    height: 280px;
+    width: 270px;
     margin-top: 2%;
     margin-left: 10px;
     border-radius: 5px;
 }
-#all_second_next span:nth-child(1){
-    font-size: 55px;
+
+#all_second_next span:nth-child(1) {
+    font-size: 35px;
     margin-right: 50px;
     border: none;
 }
-#all_second_next span{
+
+#all_second_next span {
     float: left;
     display: inline-block;
-    width: 55px;
-    font-size: 40px;
-    padding:0  10px;
+    width: 30px;
+    font-size: 22px;
+    padding: 0 10px;
     border-right: 1px solid;
+}
+#foot-pic{
+    width: 100%;
+}
+.foot-pics{
+    width: 20%;
 }

@@ -8,7 +8,7 @@ function Progress(){
 		let Time1 = setInterval(function(){
 			top_width+=10;
 			top.style.width=top_width+"px";
-			if(top_width > 1400){
+			if(top_width > 1300){
 				clearInterval(Time1);
 			}
 		},10);
@@ -16,7 +16,7 @@ function Progress(){
 		let Time2 = setInterval(function(){
 			left_height+=10;
 			left.style.height=left_height+"px";
-			if(left_height > 1400){
+			if(left_height > 1200){
 				clearInterval(Time2);
 			}
 		},10);

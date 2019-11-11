@@ -7,9 +7,12 @@ html,body{
     height: 100%;
 }
 body{
-    background-size: 1920px;
+    background-size: 100% 100%;
     background: url("../image/story-image/bg-2.jpg") 100% 100% no-repeat fixed;
     background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-width: 1500px;
 }
 
 #container{
@@ -17,7 +20,7 @@ body{
     width: 85%;
     border-left: 3px solid #8a0b15;
     border-top: 3px solid #8a0b15;
-    margin: 8% auto;
+    margin: 5% auto;
 }
 
 #title-text{
@@ -25,19 +28,19 @@ body{
     width: 90%;
     height:16em ;
     writing-mode: vertical-lr;
-    font-size: 32px;
-    padding: 30px;
-    margin: 5% 6%;
+    font-size: 22px;
+    padding: 20px;
+    margin: 5% 4%;
     font-family: serif;
 }
 #title{
-    font-size: 55px;
+    font-size: 48px;
     width: 1em;
     height: 5em;
     position: absolute;
     border: none;
     right: 10%;
-    top:6%;
+    top:5%;
     color: rgba(9, 9, 9, 0.94);
     font-family: title,"serif";
 }
@@ -54,19 +57,19 @@ body{
 #title-text span{
     width: 66px;
     border-right: 1px solid #8a0b15;
-    margin: 0 20px;
+    margin: 0 15px;
     display: inline-block;
     color: #090909;
 }
 .con{
     width: 100%;
-    height: 550px;
-    margin: 60px auto;
+    height: 500px;
+    margin: 50px auto;
     position: relative;
 }
 .con-img{
     width: 25%;
-    height: 90%;
+    height: 80%;
     padding: 20px;
     box-shadow: 0 0 10px 5px #c3c1c1;
     border-radius: 8px;
@@ -76,9 +79,9 @@ body{
 .con-text{
     display: inline-block;
     width: 55%;
-    font-size: 25px;
+    font-size: 21px;
     position: absolute;
-    margin: 25px 6%;
+    margin: 10px 6%;
     letter-spacing:5px;
 }
 .con-text span{
@@ -86,6 +89,9 @@ body{
     padding-bottom: 10px;
     display: inline-block;
     border-bottom: 1px solid #cccccc;
+}
+.con-text span:nth-child(1){
+    font-size: 23px;
 }
 hr{
     margin: 20px 0;
@@ -95,10 +101,10 @@ hr{
     width: 55%;
     position: absolute;
     display: inline-block;
-    font-size: 25px;
-    margin: 25px 6%;
-    top:390px;
-    border-top:1px solid #8a0b15;
+    font-size: 20px;
+    margin: 0 6%;
+    top: 350px;
+    border-top: 1px solid #8a0b15;
     padding-top: 10px;
 }
 @font-face {

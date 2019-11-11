@@ -11,6 +11,9 @@ body{
     background-size: 1920px;
     background: url("../image/bg/4.jpg") 100% 100% no-repeat fixed;
     background-size: cover;
+    overflow-x: hidden;
+    min-width: 1560px;
+    overflow-y: scroll;
 }
 #container{
     position: relative;
@@ -35,18 +38,18 @@ body{
 }
 .intor{
     position:absolute;
-    width:23%;
+    width:21%;
     height:610px;
     font-family: serif;
     display: inline-block;
 }
 .intor span{
-    width: 80%;
+    width: 78%;
     padding: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 20px;
     text-indent: 30px;
     font-weight: bolder;
     position:absolute;
@@ -64,7 +67,7 @@ body{
 }
 .middle{
     display:inline-block;
-    width:995px;
+    width:100%;
     position:relative;
     left: 24%;
     /*border: 2px solid #313131;*/
@@ -72,15 +75,23 @@ body{
 .left-part,.right-part{
     position:relative;
     display: inline-block;
+
 }
 .right-part{
     padding-right: 2px;
+    width: 50%;
 }
 .left-part{
     padding-left: 3px;
+    width: 44%;
 }
-.left-part div:nth-child(1),.left-part div:nth-child(2){
-    width: 255px;
+.left-part div:nth-child(1){
+    width: 50%;
+    height:270px;
+    display: inline-block;
+}
+.left-part div:nth-child(2){
+    width: 48%;
     height:270px;
     display: inline-block;
 }
@@ -89,16 +100,26 @@ body{
     height: 320px;
 }
 .right-part div:nth-child(1),.right-part div:nth-child(2){
-    width: 256px;
+    width: 30%;
     height:600px;
     display: inline-block;
 }
 .img-content{
     color: #e9eeec;
-    left: 265px;
+    left: 49%;
     position: absolute;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    top:0;
+    background-color: #090909;
+}
+.img-content2{
+    color: #e9eeec;
+    left: 33%;
+    position: absolute;
+    text-align: center;
+    font-size: 21px;
     font-weight: bold;
     top:0;
     background-color: #090909;
@@ -114,45 +135,67 @@ body{
 }
 .port-4.effect-1 .image-box{
     position: absolute;
+    width: 93%;
     top: 0;
     left: 0;
     transition: 1s;
     transform: rotateY(360deg) scale(1, 1);
 }
-
-.port-4.effect-1 .text-desc{
+.port-4.effect-2 .image-box{
     position: absolute;
+    width:100%;
     top: 0;
     left: 0;
-    font-size: 20px;
+    transition: 1s;
+    transform: rotateY(360deg) scale(1, 1);
+}
+.port-4.effect-1 .text-desc{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    top: 0;
+    left: 0;
+    font-size: 17px;
     transform: rotateY(0deg) scale(0, 0);
     transition: 1s; opacity: 0;
 }
-.port-4.effect-1 .text-desc h3{
+.port-4.effect-2 .text-desc{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    transform: rotateY(0deg) scale(0, 0);
+    transition: 1s; opacity: 0;
+}
+.port-4.effect-1 .text-desc h3,.port-4.effect-2 .text-desc h3{
     padding-top: 10px;
 }
-.port-4.effect-1 .text-desc p{
+.text-desc p{
     padding: 20px;
 }
-.port-4.effect-1:hover .text-desc{
+.port-4.effect-1:hover .text-desc ,.port-4.effect-2:hover .text-desc{
     transform: rotateY(360deg) scale(1, 1);
     opacity: 1;
-    background-image: linear-gradient(to bottom, #F0F2F0 0%, #000C40   100%);
+    background-image: linear-gradient(to bottom, #F0F2F0 0%, #87b4e5 100%);
 }
-.port-4.effect-1:hover .image-box{
+.port-4.effect-1:hover .image-box,.port-4.effect-2:hover .image-box{
     transform: rotateY(0deg) scale(0, 0);
     opacity: 0;
 }
 
 #two-all{
-    width: 100%;
+    width: 98%;
     margin-bottom: 50px;
 }
 .two-top{
     width: 50%;
     margin-top: 50px;
-    font-size: 43px;
-    font-family: "sans-serif",serif;
+    margin-bottom: 10px;
+    background: transparent;
+    font-size: 38px;
+    color: #a01210;
+    font-family: title,"serif";
 }
 span{
       display: block;
@@ -161,50 +204,53 @@ span{
 .two-left{
     position:relative;
     display: inline-block;
-    width: 400px;
-    height: 600px;
+    width: 30%;
+    height: 500px;
     margin-top: 20px;
     writing-mode: bt-rl;
-    border: 1px solid #000C40;
+    /*border: 1px solid #000C40;*/
     border-radius: 10px;
 }
 .two-mid{
     position:absolute;
     display: inline-block;
-    width: 570px;
-    height: 600px;
-    margin-left: 30px;
+    width: 30%;
+    height: 500px;
+    margin-left: 40px;
     margin-top: 20px;
 }
 .two-right{
-    position:absolute;
+    position: absolute;
     display: inline-block;
-    width: 400px;
-    height: 600px;
-    right:100px;
+    width: 30%;
+    height: 500px;
+    right: 3%;
     margin-top: 20px;
-    border: 1px solid #000C40;
+    /*border: 1px solid #606060;*/
     border-radius: 10px;
 }
 .two-mid .mid1 img{
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 .two-left span,.two-right span{
     display: inline-block;
-    width: 50px;
-    font-size: 35px;
-    margin: 13px;
-    padding-top: 10px;
-    padding-left: 20px;
-    border-right: 1px solid #58070d;
+    width: 1em;
+    font-size: 22px;
+    height: 80%;
+    padding: 10px 8px 0;
+    border-right: 1px solid #aca0a1;
     float: left;
+    margin: 10px;
+    margin-top: 30px;
+    color: #be6141;
+    /*background-color: #eaccc0;*/
 }
 #title{
     position: absolute;
     background: transparent;
     top: 9%;
-    right: 11%;
+    right: 5%;
     display: flex;
     align-items: center;
     justify-content: center;

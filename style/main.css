@@ -9,6 +9,7 @@ html,body{
     height: 100%;
     overflow: hidden;
     perspective : 2000px;
+    min-width: 1300px;
 }
 .page{
     background-color:white;
@@ -50,7 +51,7 @@ html,body{
 
 #icon-cat{
     position: fixed;
-    top:360px;
+    top:300px;
     margin-left: 40px;
     z-index: 200;
 }
@@ -110,7 +111,7 @@ html,body{
     text-decoration : none;
 }
 .cur{
-    background-color : lightgray;
+    background-color : #e3a9a9;
 }
 #cat-description .cur span {
     color: #383737;

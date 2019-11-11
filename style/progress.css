@@ -2,16 +2,16 @@
 	position: absolute;	
 	width: 80%;
 	height: 70%;
-	left: 7%;
+	left: 3%;
 	top: 10%;
 	background-repeat: no-repeat;
-	background-size: 150px;
+	background-size: 140px;
 	transition: 1s;
 
 }
 #first #hanzi table{
-	height: 150px;
-	width: 150px;
+	height: 140px;
+	width: 140px;
 	border-spacing: 0;
 	border:1px solid;
 }
@@ -29,8 +29,8 @@
 	border: 2px solid #8a0b15;
 	position: absolute;
 	background-color: #8a0b15;
-	left: 150px;
-	top: -75px;
+	left: 140px;
+	top: -70px;
 }
 #first #progress #left{
 	height: 0;
@@ -38,5 +38,5 @@
 	border:2px solid #8a0b15;
 	background-color: #8a0b15;
 	position: absolute;
-	left: 75px;
+	left: 70px;
 }

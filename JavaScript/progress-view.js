@@ -9,7 +9,7 @@ function ProgressView(){
     let Time1 = setInterval(function(){
         top_width+=10;
         top.style.width=top_width+"px";
-        if(top_width > 1400){
+        if(top_width > 1250){
             clearInterval(Time1);
         }
     },10);
